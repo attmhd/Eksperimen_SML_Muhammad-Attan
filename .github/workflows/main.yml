@@ -33,7 +33,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add preprocessing/diabetes_dataset_processing.csv
-          git commit -m "Update dataset [auto]"
+          git diff --cached --quiet || git commit -m "Update dataset [auto]"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
