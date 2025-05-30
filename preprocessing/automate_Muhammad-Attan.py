@@ -97,5 +97,3 @@ if __name__ == "__main__":
 
     processed_data, X_train, X_test, y_train, y_test = preprocess_data(file_path, target_column)
     save_processed_data(processed_data, output_path)
-
-    print("✅ Preprocessing completed successfully.")
